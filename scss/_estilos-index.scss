@@ -1,0 +1,92 @@
+.padre-novedades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    padding-top: 40px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    text-align: center;
+
+        p{
+            text-align: center;
+        }
+
+        img{
+            max-width: 100%;
+            width: 200px;
+            height: 300px;
+        }
+}
+
+.padre-mas-vendidos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    padding-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+
+        p{
+            text-align: center;
+        }
+}
+
+.hijo-mas-vendidos img{
+    max-width: 100%;
+    width: 200px;
+    height: 300px;
+}
+
+
+/* CAROUSEL*/
+
+#carouselExampleFade {
+    max-width: 800px;
+    margin: 0 auto; 
+}
+
+
+/* MEDIA CAROUSEL*/
+
+.carousel-item img{
+    height: 40vh;
+}
+
+@media (min-width: 520px){
+    .carousel-item img{
+        height: 50vh;
+    }
+}
+
+@media (min-width: 760px){
+    .carousel-item img{
+        height: 70vh;
+    }
+}
+
+@media (min-width: 1020px){
+    .carousel-item img{
+        height: 80vh;
+    }
+}
+
+/* MEDIA INDEX */
+
+@media (min-width: 420px){
+    .padre-mas-vendidos, .padre-novedades{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        margin-bottom: 50px;
+    }
+}
+
+
+@media (min-width: 750px){
+    .padre-mas-vendidos, .padre-novedades{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

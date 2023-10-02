@@ -1,0 +1,30 @@
+.contacto p{
+        text-align: center;
+        justify-content: center;
+    }
+
+    .formulario-contacto label {
+        display:block;
+        margin-bottom: 10px;
+        color: $color-principal;
+        margin-left: 15px;
+
+        input {
+            margin-left: 20px;
+            font-weight: bold;
+            color:$color-secundario;
+
+        }  
+        textarea {
+            margin-left: 20px;
+        }
+    }
+
+    
+.boton {
+        background-color: $color-principal;
+        border-radius: 5px;
+        padding: 3px;
+        cursor: pointer;
+    }
+

@@ -1,0 +1,96 @@
+.container-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+
+
+@media (min-width: 768px){
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        justify-items: center;
+    }
+}
+
+@media (min-width: 850px){
+    .container-cards {
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+    }
+}
+
+.container-opciones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; 
+
+    label {
+        border: solid 1px;
+        padding: 8px 15px;
+        width: 150px;
+        text-align: center;
+        cursor: pointer;
+        border-radius: 15px;
+        background-color:$color-principal;
+        color:white;
+
+        &:hover{
+            background-color:$color-secundario;
+            border:none;
+        }
+    }
+    
+
+}
+
+@media (min-width: 560px) {
+    .container-opciones {
+        flex-direction: row;
+    }
+}
+
+#novelas:checked ~ .container-opciones .label-novelas,
+#poesia:checked ~ .container-opciones .label-poesia,
+#todos:checked ~ .container-opciones .label-todos {
+    background-color:$color-secundario;
+}
+
+.card-title{
+    color:$color-secundario;
+}
+
+.btn {
+    background-color: $color-principal;
+    color:$color-secundario;
+    border: none;
+}
+
+#novelas, #poesia,#todos{
+    display: none;
+}
+
+.novelas, .poesia {
+    display: none;
+}
+
+#novelas:checked ~ .container-cards .novelas,
+#poesia:checked ~ .container-cards .poesia{
+    display: flex;
+}
+
+#todos:checked ~ .container-cards .novelas,
+#todos:checked ~ .container-cards .poesia{
+    display: flex;
+}
+

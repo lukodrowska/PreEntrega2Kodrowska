@@ -1,0 +1,54 @@
+.card{
+    width: 250px;
+    height: 350px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    margin-top: 100px;
+    border:$color-secundario;
+    max-width: 100%;
+
+        img{
+            width: 200px;
+            height: 300px;
+            }
+
+        p{
+            text-align: center;
+            justify-content: center;
+            justify-items: center;
+        }
+}
+
+
+.descuento{
+    position: absolute;
+    top: 0;
+    right: 15px;
+    background-color:$color-principal;
+}
+
+
+
+.texto-tachado{
+    text-decoration: line-through;
+    margin-top:2px;
+}
+
+.texto-fotos{
+    text-align: center;
+    justify-content: center;
+}
+
+
+
+.promociones{
+    display: flex;
+    gap: 35px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
