@@ -33,21 +33,15 @@ btn btn-primary{
 /*estilos generales*/
 
 h1 { 
-    color: $color-principal;
-    text-decoration: underline;
-text-align:center;
+    @extend .h;
 }
 
 h2{
-    color:$color-principal;
-    text-decoration: underline;
-    text-align: center;
-    margin-top: 10px;
+    @extend .h;
 }
 
 h5{
-    color: $color-principal;
-    margin-top: 10px;
+    @extend .h;
 }
 
 h3{
@@ -68,20 +62,6 @@ a{
     text-decoration: none;
 }
 
-button{
-    display: block;
-    margin: 0 auto; 
-    background-color:$color-principal;
-    color:$color-secundario; 
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    width: 150px;
-    cursor: pointer;
-    margin-top: 5px;
-    text-align: center;
-    font-weight: bold;
-}
 
 
 footer{
@@ -95,5 +75,7 @@ footer{
     font-size: 30px;
     color:$color-secundario;
 }
+
+
 
 

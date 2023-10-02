@@ -138,21 +138,6 @@ a {
   text-decoration: none;
 }
 
-button {
-  display: block;
-  margin: 0 auto;
-  background-color: #e97a73;
-  color: #155d27;
-  border: none;
-  border-radius: 5px;
-  padding: 5px;
-  width: 150px;
-  cursor: pointer;
-  margin-top: 5px;
-  text-align: center;
-  font-weight: bold;
-}
-
 footer {
   width: 100%;
   margin-top: 50px;
@@ -313,21 +298,30 @@ footer {
 }
 .formulario-contacto label input {
   margin-left: 20px;
-  font-weight: bold;
-  color: #155d27;
 }
 .formulario-contacto label textarea {
   margin-left: 20px;
 }
 
 .boton {
-  background-color: #e97a73;
-  border-radius: 5px;
-  padding: 3px;
-  cursor: pointer;
+  height: 60px;
 }
 
 .envio {
   text-align: center;
   justify-content: center;
+}
+
+.button, .boton {
+  background-color: #e97a73;
+  color: #155d27;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+  height: 60px;
+  margin-top: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
