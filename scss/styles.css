@@ -5,7 +5,7 @@
   justify-content: space-around;
   padding-top: 40px;
   margin-left: 70px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-align: center;
 }
 .padre-novedades p {
@@ -102,24 +102,6 @@ btn btn-primary {
 }
 
 /*estilos generales*/
-h1 {
-  color: #e97a73;
-  text-decoration: underline;
-  text-align: center;
-}
-
-h2 {
-  color: #e97a73;
-  text-decoration: underline;
-  text-align: center;
-  margin-top: 10px;
-}
-
-h5 {
-  color: #e97a73;
-  margin-top: 10px;
-}
-
 h3 {
   text-align: center;
   font-size: 15px;
@@ -319,9 +301,15 @@ footer {
   border-radius: 5px;
   padding: 5px;
   width: 150px;
-  height: 60px;
   margin-top: 5px;
   text-align: center;
   font-weight: bold;
   cursor: pointer;
+}
+
+.titulos, h1, h2, h5, h3 {
+  color: #e97a73;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 10px;
 }/*# sourceMappingURL=styles.css.map */

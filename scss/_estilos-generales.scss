@@ -33,18 +33,19 @@ btn btn-primary{
 /*estilos generales*/
 
 h1 { 
-    @extend .h;
+    @extend .titulos;
 }
 
 h2{
-    @extend .h;
+    @extend .titulos;
 }
 
 h5{
-    @extend .h;
+    @extend .titulos;
 }
 
 h3{
+    @extend .titulos;
     text-align: center;
     font-size: 15px;
     color:$color-secundario;

@@ -1,12 +1,5 @@
 .padre-novedades{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    padding-top: 40px;
-    margin-left: 70px;
-    margin-bottom: 30px;
-    text-align: center;
+        @include flex-row-wrap;
 
         p{
             text-align: center;
@@ -20,14 +13,7 @@
 }
 
 .padre-mas-vendidos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    padding-top: 40px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    text-align: center;
+        @include flex-row-wrap;
 
         p{
             text-align: center;
